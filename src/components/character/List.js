@@ -1,11 +1,11 @@
 import React from 'react';
 import Card from './Card';
 
-const List = ({characters}) =>{
+const List = ({characters, userInput}) =>{
     return(
         <div>
            {characters ? characters.map((character)=>(
-            <Card key={character.id} data={character}/>
+            <Card key={character.id} data={character} userInput={userInput}/>
                 )) : <div>Estoy vacio</div>}
         </div>
     );
