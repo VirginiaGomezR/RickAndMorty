@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {Switch, Route} from 'react-router-dom';
 import ListWithFilter from './components/character/ListWithFilter';
 import LogoTitle from './images/RickMorty_logo.png';
+import LogoImage from './images/RickHead.png';
 import Detail from './components/character/Detail'
 import './stylesheets/App.scss';
 
@@ -12,11 +13,12 @@ const App = () => {
   const [userInput, setUserInput]= useState (''); //Filtro
 
   return (
-    <div className="App">
-      <header>
-              <img src={LogoTitle} alt="Rick and Morty"></img>
+    <div className="app">
+      <header className="header">
+              <img className="logo_title" src={LogoTitle} alt="Rick and Morty"></img>
+              <img className="logo_image" src={LogoImage} alt="Rick"></img>
       </header>
-            <main>
+            <main className="page">
             <Switch>
                 <Route exact path="/">
                     <ListWithFilter 

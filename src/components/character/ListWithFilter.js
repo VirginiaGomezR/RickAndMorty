@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Filter from '../Filter';
 import List from './List';
+import '../../stylesheets/ListWithFilter.scss';
 import {getFirstCharacters, getCharactersByName} from '../../services/api';
 
 const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInput}) =>{
@@ -47,7 +48,7 @@ const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInpu
     return(
         <div>
             <Filter userInput = {userInput} handleUserInput={handleUserInput}/>
-            {showErrorMessage === true ? <div>{`No hay ningún personaje que coincida con la palabra ${userInput}`}</div> :  <List characters={characterList} userInput={userInput}/> }
+            {showErrorMessage === true ? <div className="filter_message">{`No hay ningún personaje que coincida con la palabra ${userInput}`}</div> :  <List characters={characterList} userInput={userInput}/> }
            
         </div>
     );

@@ -1,0 +1,9 @@
+.filter_message{
+      color:white;
+      font-size: 10px;
+      font-weight: bold;
+
+      @media all and (min-width: 768px) {
+        font-size: 20px;
+      }
+}

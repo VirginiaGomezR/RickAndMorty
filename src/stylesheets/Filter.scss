@@ -1,0 +1,27 @@
+.filter{
+    margin:20px;
+    border-radius: 10px;
+    border: 3px solid #acdb31;
+  
+   @media all and (min-width:768px){
+       margin:auto;
+       width: 25%;
+       margin-bottom:40px;
+   }
+   
+}
+ .form{
+    display: flex;
+
+
+    .userInput{
+        flex: 1;
+        border-radius: 10px;
+        border: 0;
+        text-align:center ;
+    
+          }
+    }
+
+    
+
