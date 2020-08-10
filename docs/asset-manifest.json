@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.602a62cb.chunk.css",
+    "main.js": "/static/js/main.9d6db606.chunk.js",
+    "main.js.map": "/static/js/main.9d6db606.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.b33ce693.js",
+    "runtime-main.js.map": "/static/js/runtime-main.b33ce693.js.map",
+    "static/js/2.b2a6f98e.chunk.js": "/static/js/2.b2a6f98e.chunk.js",
+    "static/js/2.b2a6f98e.chunk.js.map": "/static/js/2.b2a6f98e.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4167476634e43cae7e4aaefa0f3bc13f.js": "/precache-manifest.4167476634e43cae7e4aaefa0f3bc13f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.602a62cb.chunk.css.map": "/static/css/main.602a62cb.chunk.css.map",
+    "static/js/2.b2a6f98e.chunk.js.LICENSE.txt": "/static/js/2.b2a6f98e.chunk.js.LICENSE.txt",
+    "static/media/LifeLogo.png": "/static/media/LifeLogo.0de5c799.png",
+    "static/media/RickHead.png": "/static/media/RickHead.eeb779b3.png",
+    "static/media/RickMorty_logo.png": "/static/media/RickMorty_logo.75509f2e.png",
+    "static/media/RickPeace.png": "/static/media/RickPeace.1948ebb3.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b33ce693.js",
+    "static/js/2.b2a6f98e.chunk.js",
+    "static/css/main.602a62cb.chunk.css",
+    "static/js/main.9d6db606.chunk.js"
+  ]
+}
