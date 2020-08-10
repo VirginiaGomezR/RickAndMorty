@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {Switch, Route} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import ListWithFilter from './character/ListWithFilter';
 import Detail from './character/Detail';
 import LogoTitle from '../images/RickMorty_logo.png';
@@ -33,5 +34,21 @@ const App = () => {
     </div>
   );
 }
+
+App.propTypes = {
+  characterList: PropTypes.array,
+};
+
+App.propTypes = {
+  setCharacterList: PropTypes.func,
+};
+
+App.propTypes = {
+  userInput: PropTypes.string,
+};
+
+App.propTypes = {
+  setUserInput: PropTypes.func,
+};
 
 export default App;

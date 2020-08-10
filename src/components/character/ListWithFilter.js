@@ -28,14 +28,16 @@ const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInpu
     characterList.sort( sortName );
 
     useEffect(() => { 
+      if(userInput ===''){
         getFirstCharacters().then(data => { 
             setCharacterList(data);
         });
-    }, [setCharacterList]);
+      }
+    }, [userInput,setCharacterList]);
 
 
     useEffect(() => { 
-    
+    console.log(userInput);
     if(userInput !== '') {
         getCharactersByName(userInput).then(data => { 
             setShowErrorMessage(false); //volver al estado por defecto, se oculta el mensaje de error
