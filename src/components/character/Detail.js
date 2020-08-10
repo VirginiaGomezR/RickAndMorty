@@ -1,5 +1,6 @@
 import React, {useState, useEffect}from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import {getCharacter} from '../../services/api';
 import LogoMessage from '../../images/RickPeace.png';
 import LogoDead from '../../images/DeadLogo.png';
@@ -8,8 +9,7 @@ import LogoAlien from '../../images/AlienLogo.png';
 import LogoLife from '../../images/LifeLogo.png';
 import '../../stylesheets/Detail.scss';
 
-const Detail = ({match,location}) => {
-    console.log(location);
+const Detail = ({match}) => {
     const [infoCharacter, setInfoCharacter] = useState({});
     const [showErrorMessage, setShowErrorMessage]= useState (false);
 
@@ -19,13 +19,20 @@ const Detail = ({match,location}) => {
             setInfoCharacter(data)
 
         })
-        .catch((error)=> setShowErrorMessage(true)); //actualiza estado a true para que muestre el mensaje de error
+        .catch((error)=> setShowErrorMessage(true));
 
     },[match.params.id])
 
-    const aliveOrNot = infoCharacter.status === "Dead" ? (<p className="logo_text">Dead <img className="dead_logo" src={LogoDead} alt={"muerto"}></img></p>):(<p className="logo_text">Alive <img className="alive_logo" src={LogoLife} alt={"vivo"}></img></p>); //TODO
 
-    const humanOrNot = infoCharacter.species === "Alien" ? (<p className="logo_text">Alien <img className="alien_logo" src={LogoAlien} alt={"alien"}></img></p>):(<p className="logo_text">Human <img className="human_logo" src={LogoHuman} alt={"humano"}></img></p>); //TODO
+    //Añadimos imagen segun estado
+    const aliveOrNot = infoCharacter.status === "Dead" ? 
+    (<p className="logo_text">Dead <img className="dead_logo" src={LogoDead} alt={"muerto"}></img></p>)
+    :(<p className="logo_text">Alive <img className="alive_logo" src={LogoLife} alt={"vivo"}></img></p>);
+
+    //Añadimos imagen segun especie
+    const humanOrNot = infoCharacter.species === "Alien" ? 
+    (<p className="logo_text">Alien <img className="alien_logo" src={LogoAlien} alt={"alien"}></img></p>)
+    :(<p className="logo_text">Human <img className="human_logo" src={LogoHuman} alt={"humano"}></img></p>); 
 
 
     return(
@@ -47,6 +54,11 @@ const Detail = ({match,location}) => {
         </div>
     );
 };
+
+
+Detail.propTypes = {
+    match: PropTypes.object,
+  };
 
 
 export default Detail;

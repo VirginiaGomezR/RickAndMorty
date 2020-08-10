@@ -1,40 +1,38 @@
 .app {
   text-align: center;
-}
 
-.header{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  @media all and (min-width: 768px) {
-  
-      flex-direction: row;
+    @media all and (min-width: 768px) {
+        flex-direction: row;
+    }
+
+    .logo_title{
+      width:80%;
+      margin:10px;
+    
+      @media all and (min-width: 768px) {
+        width: 30%;
+      }
+    }
+    
+    .logo_image {
+      width:60%;
+      cursor: pointer;
+      height:40%;
+      transition: transform .2s;
+      
+      @media all and (min-width: 768px) {
+        width:30%;
+      }
+    
+      &:hover {
+        transform: scale(0.5); 
+      }
+    }
   }
 }
-
-.logo_title{
-  width:80%;
-  margin:10px;
-
-  @media all and (min-width: 768px) {
-    width: 30%;
-  }
-}
-
-.logo_image {
-  width:60%;
-  cursor: pointer;
-  height:40%;
-  transition: transform .2s;
-  
-  @media all and (min-width: 768px) {
-    width:30%;
-  }
-
-  &:hover {
-    transform: scale(0.5); 
-  }
-}
-

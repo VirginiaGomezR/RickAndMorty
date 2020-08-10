@@ -1,9 +1,9 @@
 import React, {useState} from 'react';
 import {Switch, Route} from 'react-router-dom';
 import ListWithFilter from './components/character/ListWithFilter';
+import Detail from './components/character/Detail';
 import LogoTitle from './images/RickMorty_logo.png';
 import LogoImage from './images/RickHead.png';
-import Detail from './components/character/Detail'
 import './stylesheets/App.scss';
 
 

@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import PropTypes from 'prop-types';
 import Filter from '../Filter';
 import List from './List';
 import '../../stylesheets/ListWithFilter.scss';
@@ -13,6 +14,7 @@ const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInpu
         setUserInput(ev.target.value);
     };
 
+    //ordena alfabeticamente
     const sortName = ( a, b ) =>{
         if ( a.name < b.name ){
           return -1;
@@ -25,8 +27,8 @@ const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInpu
       
     characterList.sort( sortName );
 
-    useEffect(() => { //ejecuta lo que tengamos en el body de la funcion segun el valor de las dependecias (el cambio de valor)
-        getFirstCharacters().then(data => { //recoge la promesa y podemos hacer otro then para setear el estado...
+    useEffect(() => { 
+        getFirstCharacters().then(data => { 
             setCharacterList(data);
         });
     }, [setCharacterList]);
@@ -53,4 +55,20 @@ const ListWithFilter = ({characterList, setCharacterList, userInput, setUserInpu
         </div>
     );
 }
+
+ListWithFilter.propTypes = {
+    characterList: PropTypes.array,
+  };
+  
+ListWithFilter.propTypes = {
+    setCharacterList: PropTypes.func,
+  };
+
+ListWithFilter.propTypes = {
+    userInput: PropTypes.string,
+  };
+
+ListWithFilter.propTypes = {
+    setUserInput: PropTypes.func,
+  };
 export default ListWithFilter;

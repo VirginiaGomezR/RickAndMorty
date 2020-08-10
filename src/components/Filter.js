@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import '../stylesheets/Filter.scss';
 
 const Filter = ({userInput, handleUserInput}) =>{
@@ -10,5 +11,13 @@ const Filter = ({userInput, handleUserInput}) =>{
     </div>
     );
 }
+
+Filter.propTypes = {
+    handleUserInput: PropTypes.func,
+  };
+
+Filter.propTypes = {
+    userInput: PropTypes.string,
+  };
 
 export default Filter;

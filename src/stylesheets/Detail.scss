@@ -1,40 +1,47 @@
+.dead_logo, .alive_logo, .alien_logo, .human_logo{
+    width:10%;
+    vertical-align: middle;
+    
+}
+
+.logo_text{
+    color:black;
+    margin:0;
+}
 
 .character_message {
-        color:white;
-        font-weight: bold;
-        font-size: 15px;
+    color:white;
+    font-weight: bold;
+    font-size: 15px;
 
 
-        @media all and (min-width: 768px) {
-            font-size:30px;
-        }
-    }
-
-    .logo_message{
-        border-radius: 150px;
-        display: block;
-        margin: 10px auto;
-        width:25%;
-    }
-    
-
-.return_container{
-       
-    margin:20px;
-
-    .return_link {
-            text-decoration: none;
-            color:white;
-            font-weight: bold;
-            font-size: 15px;
-        
-            @media all and (min-width: 768px) {
-                font-size:20px;
-            }
-
+    @media all and (min-width: 768px) {
+        font-size:30px;
     }
 }
 
+.logo_message{
+    border-radius: 150px;
+    display: block;
+     margin: 10px auto;
+    width:25%;
+}
+    
+
+.return_container{     
+    margin:20px;
+
+    .return_link {
+        text-decoration: none;
+        color:white;
+        font-weight: bold;
+        font-size: 15px;
+        
+        @media all and (min-width: 768px) {
+            font-size:20px;
+        }
+    }
+}
 
 .container_card{
 
@@ -48,6 +55,10 @@
     padding: 10px;
     box-shadow: 10px 10px 5px 0px rgba(238, 8, 188, 0.75);
  
+    @media all and (min-width: 768px) {  
+        width: 25%;
+        margin: auto; 
+    }
 
     .image_detail img{
         width: 100%;
@@ -55,41 +66,18 @@
     }
         
     .card_list{
-            list-style-type: none;
-            padding:0;
-            line-height: 28px;
-            color:black;
+        list-style-type: none;
+        padding:0;
+        line-height: 28px;
+        color:black;
         
-            li span{
-                font-weight: bold;
-                color:white;
+        li span{
+            font-weight: bold;
+            color:white;
                 
-            }
-            
-        
+        }
     }
-    @media all and (min-width: 768px) {  
-         width: 25%;
-         margin: auto;
-    
-        
-    }
-
 }
-
-
-.dead_logo, .alive_logo, .alien_logo, .human_logo{
-    width:10%;
-    vertical-align: middle;
-    
-}
-
-.logo_text{
-    color:black;
-    margin:0;
-}
-
-
 
 
 

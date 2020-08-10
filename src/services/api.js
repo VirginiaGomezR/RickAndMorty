@@ -1,7 +1,7 @@
 const getFirstCharacters = () => {
     return fetch('https://rickandmortyapi.com/api/character/') //20 primeros
       .then(response => response.json())
-      .then((data) => {//console.log(data)
+      .then((data) => {
         return data.results.map((character) => {
         
           return {
@@ -14,7 +14,7 @@ const getFirstCharacters = () => {
       });
   };
   
-  const getCharactersByName = (userInput) =>{
+  const getCharactersByName = (userInput) =>{ //por nombre
     return fetch(`https://rickandmortyapi.com/api/character/?name=${userInput}`)
     .then(response => response.json())
     .then((data) => {
@@ -31,7 +31,7 @@ const getFirstCharacters = () => {
   };
 
 
-  const getCharacter = (id) =>{
+  const getCharacter = (id) =>{ //por id
     return fetch(`https://rickandmortyapi.com/api/character/${id}`)
     .then(response => response.json())
     .then((data) => {

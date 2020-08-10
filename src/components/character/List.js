@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Card from './Card';
 
 const List = ({characters, userInput}) =>{
@@ -10,5 +11,13 @@ const List = ({characters, userInput}) =>{
         </div>
     );
 };
+
+List.propTypes = {
+    characters: PropTypes.array,
+  };
+
+List.propTypes = {
+    userInput: PropTypes.string,
+  };
 
 export default List;

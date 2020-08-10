@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import PropTypes from 'prop-types';
 import '../../stylesheets/Card.scss';
 
 
@@ -14,5 +15,9 @@ return(
     </div>
 );
 }
+
+Card.propTypes = {
+    data: PropTypes.object,
+  };
 
 export default Card;
