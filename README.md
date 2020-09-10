@@ -1,6 +1,6 @@
-## Buscador de personajes de Rick and Morty
+## Buscador de personajes de Rick y Morty
 
-Página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje.
+Página web con un listado de personajes de Rick y Morty, que podemos filtrar por el nombre del personaje.
 
 Las partes de la web son las siguientes:
 
@@ -23,4 +23,4 @@ En origen nos devolverá los 20 primeros personajes.
 
 Wubba Lubba Dub Dub!!
 
-![alt text](https://images3.alphacoders.com/812/thumb-1920-812062.png "Rick and Morty")
+![alt text](https://images3.alphacoders.com/812/thumb-1920-812062.png "Rick y Morty")
