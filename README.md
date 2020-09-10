@@ -1,10 +1,8 @@
-## Ejercicio evaluación final módulo 3
+## Buscador de personajes de Rick and Morty
 
-### Buscador de personajes de Rick and Morty
+Página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje.
 
-El ejercicio consiste en desarrollar en React una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje.
-
-Las partes del ejercicio son las siguientes:
+Las partes de la web son las siguientes:
 
 1. Listado de personajes: la información de los personajes la devuelve el siguiente servicio, https://rickandmortyapi.com/documentation/#get-all-characters
 En origen nos devolverá los 20 primeros personajes.
@@ -23,5 +21,6 @@ En origen nos devolverá los 20 primeros personajes.
 
 8. Ordenación: el listado de personajes se carga en orden alfabético.
 
+Wubba Lubba Dub Dub!!
 
 ![alt text](https://images3.alphacoders.com/812/thumb-1920-812062.png "Rick and Morty")
