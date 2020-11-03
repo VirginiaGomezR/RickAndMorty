@@ -21,6 +21,27 @@ En origen nos devolverá los 20 primeros personajes.
 
 8. Ordenación: el listado de personajes se carga en orden alfabético.
 
+## Herramientas
+
+- React
+- JavaScript
+- Sass
+- Visual Studio Code
+
+## ¿Cómo arrancar el proyecto?
+
+1. Clonar el repositorio en tu ordenador
+```
+$ git clone https://github.com/VirginiaGomezR/RickAndMorty.git
+```
+2. Instalar dependencias
+```
+$ npm install
+```
+3. Arrancar en modo desarrollo: 
+````
+$ npm start
+````
 Wubba Lubba Dub Dub!!
 
 ![alt text](https://images3.alphacoders.com/812/thumb-1920-812062.png "Rick y Morty")
